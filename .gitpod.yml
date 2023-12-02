@@ -4,7 +4,7 @@ tasks:
       TF_LOG: DEBUG
     before: |
       cd $GITPOD_REPO_ROOT
-      cp $GITPOD_REPO_ROOT/terraform.tfvars.example $GITPOD_REPO_ROOT/terraform.tfvars
+      cp $GITPOD_REPO_ROOT/src/terraform/terraform.tfvars.example $GITPOD_REPO_ROOT/src/terraform/terraform.tfvars
       source ./bin/create_bash_aliases
       source ./bin/install_terraform_cli
       source ./bin/generate_tfrc_credentials
